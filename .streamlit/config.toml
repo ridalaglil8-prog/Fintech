@@ -1,0 +1,27 @@
+# Streamlit theme for FinPilot AI: dark navy base with blue / cyan accents.
+
+[theme]
+base = "dark"
+primaryColor = "#3B82F6"
+backgroundColor = "#080E1C"
+secondaryBackgroundColor = "#101A2E"
+textColor = "#E6EEF9"
+font = "sans serif"
+
+[server]
+headless = true
+runOnSave = true
+fileWatcherType = "auto"
+maxUploadSize = 25
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+# Keep full error details while developing locally (never shown as raw
+# tracebacks to end users: pages render friendly messages instead).
+showErrorDetails = "full"
+
+[logger]
+level = "info"

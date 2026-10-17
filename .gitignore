@@ -1,0 +1,43 @@
+# --- Secrets ---------------------------------------------------------------
+# Never commit real credentials. Use .env.example as the template.
+.env
+.env.*
+!.env.example
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments --------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# --- Testing / tooling -----------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Local data ------------------------------------------------------------
+# User-provided Moroccan market data and universes stay local.
+data/morocco_universe.json
+data/uploads/
+*.local.csv
+
+# --- Streamlit -------------------------------------------------------------
+.streamlit/secrets.toml
+
+# --- OS / editor -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
